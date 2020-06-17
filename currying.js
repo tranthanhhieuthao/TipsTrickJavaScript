@@ -29,7 +29,9 @@ var arr2 = [
         name:'Chi'
     }
 ]
- const get = property => Object => Object[property]
-
- console.log(arr1.map(get('name')))
- console.log(arr2.map(get('id')))
+ const get = property => object => object[property]
+arr1.map(e => e.id)
+arr1.map(e => e.name)
+arr2.map(e => e.id)
+ console.log(arr1.map(get('id')))
+ console.log(arr2.map(get('name')))
